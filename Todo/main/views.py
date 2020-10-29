@@ -2,9 +2,17 @@ from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 from django.utils import timezone
 from .models import TodoItem
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponse
 # Create your views here.
 
+
+def signin(request):
+    return HttpResponseRedirect("This is signin page")
+
+
+def signup(request):
+
+    return render(request, 'user/login_bkp.html')
 
 def todoView(request):
     todo_items = TodoItem.objects.all().order_by("-added_date")
