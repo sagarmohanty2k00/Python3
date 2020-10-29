@@ -134,7 +134,7 @@ def play(word):
                 print("You already guessed the word..",guess)
             elif guess in word:
                 print(guess, "is not the word.")
-                tries = tried-1
+                tries = tries-1
                 guessed_words.append(guess)
             else:
                 guessed = True
