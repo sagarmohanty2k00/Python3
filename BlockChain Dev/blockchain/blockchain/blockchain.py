@@ -57,11 +57,14 @@ class Blockchain(object):
         })
 
     def proof_of_work(self):
+        count = 0
         while True:
+            count += 1
             new_block = self.new_block()
             if self.valid_hash(new_block):
                 break
         
+        new_block['count'] = count
         print(f"new block found : {new_block}")
         self.chain.append(new_block)
         return new_block
@@ -71,3 +74,6 @@ class Blockchain(object):
         # checks wheather or not the hash generated is valid or not
         # for example here we check that the hash should start with '0000'
         return block['hash'].startswith('0000')
+
+
+# (1/210000)BTC
