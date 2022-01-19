@@ -7,6 +7,7 @@ authors = ["sagarmohanty2k00 <sagarmohanty2k00@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.9"
 asyncio = "^3.4.3"
+PyNaCl = "^1.5.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
