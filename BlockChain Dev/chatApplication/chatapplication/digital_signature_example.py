@@ -8,4 +8,18 @@ from nacl import encoding, signing
 
 # Generating keys
 bitu_private_key= signing.SigningKey.generate()
-bitu_poblic_key = bitu_private_key.verify_key
+bitu_public_key = bitu_private_key.verify_key
+
+# creating hex of public key
+bitu_public_key_hex = bitu_public_key.encode(encoder=encoding.HexEncoder)
+
+# now sign a document
+signed = bitu_private_key.sign(b"Send $37 to Mama")
+
+verify_key = signing.VerifyKey(bitu_public_key_hex, encoder=encoding.HexEncoder)
+
+try:
+    print(f"Signed document : {signed}")
+    print(verify_key.verify(signed).decode('utf-8'))
+except:
+    print("document is altered")
