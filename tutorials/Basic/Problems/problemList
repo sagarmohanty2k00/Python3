@@ -1,0 +1,26 @@
+1. Add 2 numbers
+   - define a and b
+   - user input a and b
+   - store sum in c
+   - print c
+
+2. sum of a list
+   - take a list as user input
+   - store sum in sum variable
+   - print sum
+
+3. terminal calculator
+   - take input of 2 numbers a and b
+   - take input of operations (+ - * % /) (char input)
+   - print output
+
+4. print all possible prime numbers from 1 - 100
+   - loop from 1 - 100
+   - add condition to identify prime numbers
+   - print if a number is prime
+
+5. Identify leap year
+   - take input year as a number
+   - add conditions to identify whether year is a leap year of not
+   - print the year if it is a leap year
+
