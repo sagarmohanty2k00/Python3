@@ -27,4 +27,38 @@ for key in list(_dict.keys()):
     print(_dict[key], end=", ")
 print()
 
+
+# numbers 1 - 100
+# print all odds
+# print first 10 odds
+
+for num in range(1, 101):
+    if num % 2 == 1:
+        print(num)
+
+for num in range(1, 101):
+    if num % 2 == 0:
+        continue
+
+    print(num)
+
+oddCount = 0
+for num in range(1, 101):
+    if num % 2 == 0:
+        continue
+    
+    if oddCount < 10:
+        print(num)
+        oddCount += 1
+
+oddCount = 0
+for num in range(1, 101):
+    if num % 2 == 0:
+        continue
+    
+    print(num)
+    oddCount += 1
+    if oddCount >= 10:
+        break
+
 print(range(10))
