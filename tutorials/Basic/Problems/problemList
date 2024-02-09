@@ -24,3 +24,38 @@
    - add conditions to identify whether year is a leap year of not
    - print the year if it is a leap year
 
+6. Investment Calculator
+   - take input for investment type [ SIP, Lumpsum ]
+   - take input for selected type [ if SIP monthlySIP, else lumpsum amount]
+   - take input tenure [ 10 years ]
+   - define rate of interest [constant roi = 10%]
+   - print results
+   - advanced concept - print inflation adjusted amount [constant inf = 6%]
+
+7. Profit calculator
+   - P&L
+   - buying price
+   - selling price
+   - print percentage loss of profit
+
+8. *
+   **
+   ***
+   ****
+   *****
+   .............. upto nth level
+
+9. *
+   **
+   ***
+   ****
+   *****
+   ****
+   ***
+   **
+   *
+
+10.   *
+     **
+    ***
+   ****
